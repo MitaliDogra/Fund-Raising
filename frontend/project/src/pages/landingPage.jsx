@@ -1,15 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./landing.css";
 
 const LandingPage = () => {
+  const navigate = useNavigate(); // Hook for navigation
+
   return (
     <div className="landing-page">
       {/* Header Section */}
       <header className="header">
         <h1>Welcome to Our Fundraising Platform</h1>
-        <p>
-          Empowering communities through impactful fundraising initiatives.
-        </p>
+        <p>Empowering communities through impactful fundraising initiatives.</p>
       </header>
 
       {/* Categories Section */}
@@ -20,7 +21,7 @@ const LandingPage = () => {
             <div key={category} className="category-card">
               <h3>{category}</h3>
               <p>Support impactful initiatives in {category.toLowerCase()}.</p>
-              <button>Learn More</button>
+              <button onClick={() => navigate("/categories")}>Learn More</button> 
             </div>
           ))}
         </div>
