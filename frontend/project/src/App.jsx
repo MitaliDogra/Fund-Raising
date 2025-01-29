@@ -6,14 +6,14 @@ import BasicComponent from "./components/First"
 import Dashboard from "./pages/dashboard"
 import Header from './components/header'
 import LandingPage from "./pages/landingPage"
-
+import Categories from "./pages/Categories"
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <LandingPage/>
+    {/* <LandingPage/> */}
     </>
   )
 }

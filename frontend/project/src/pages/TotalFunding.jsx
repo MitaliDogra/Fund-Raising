@@ -1,7 +1,7 @@
-import type React from "react"
+import React from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
-const TotalFunding: React.FC = () => {
+const TotalFunding = () => {
   // In a real application, this would be fetched from an API
   const totalFunding = 1500000000 // $1.5 billion
 
@@ -18,4 +18,3 @@ const TotalFunding: React.FC = () => {
 }
 
 export default TotalFunding
-
