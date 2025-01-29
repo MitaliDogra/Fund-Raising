@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Category.css";
 
 const categories = {
   education: "Education empowers individuals and strengthens communities by providing knowledge and skills.",
